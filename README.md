@@ -20,7 +20,7 @@ Three backend systems built from scratch in Go. Each one has CI that runs the te
 race detector, a Docker image, and release binaries for Linux, macOS and Windows.
 
 ```mermaid
-flowchart LR
+flowchart TB
     C([Clients]) --> G["<b>gatekeeper</b><br/>API gateway"]
     G --> S[Services]
     S -- "read / write" --> K["<b>tinykv</b><br/>key-value store"]
